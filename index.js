@@ -4,7 +4,7 @@ if (typeof require === 'function') {
   var moment = require('moment');
 }
 
-moment.duration.fn.precise = function precise() {
+moment.duration.fn.literal = function literal() {
   var segments = [];
   var weeks = +this.asWeeks().toFixed(0);
   var days = this.days();

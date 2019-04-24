@@ -1,0 +1,37 @@
+{
+  "name": "moment-duration-literal",
+  "version": "1.0.0",
+  "description": "Moment Duration nice human-readable formatter",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "mocha tests/*",
+    "node-test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalideastudio/moment-duration-literal.git"
+  },
+  "keywords": [
+    "moment",
+    "duration",
+    "literal",
+    "format",
+    "plugin"
+  ],
+  "peerDependencies": {
+    "moment": "2.x.x"
+  },
+  "engine": "node >= 0.10.26",
+  "author": "Serhii Matrunchyk <serhii@digitalidea.studio>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalideastudio/moment-duration-literal/issues"
+  },
+  "homepage": "https://github.com/digitalideastudio/moment-duration-literal#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^5.2.0",
+    "moment": "2.x.x"
+  }
+}

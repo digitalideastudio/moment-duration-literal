@@ -1,4 +1,6 @@
-Moment Duration nice human-readable literal formatter [![Build Status](https://travis-ci.org/digitalideastudio/moment-duration-literal.svg?branch=master)](https://travis-ci.org/digitalideastudio/moment-duration-literal)
+Moment Duration nice human-readable literal formatter
+
+[![Build Status](https://travis-ci.org/digitalideastudio/moment-duration-literal.svg?branch=master)](https://travis-ci.org/digitalideastudio/moment-duration-literal)
 
 ### Usage
 

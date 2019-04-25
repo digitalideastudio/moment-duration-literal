@@ -2,7 +2,7 @@ Moment Duration nice human-readable literal formatter [![Build Status](https://t
 
 ### Usage
 
-![Alt text](https://monosnap.com/image/eo2Z2lt1uKkAiOT0HFDq7PtaEI5YAB.png)
+![Example](https://monosnap.com/image/aIdco3gygZDvKIOmZ0MvQ95bjH6AuU.png?new=1)
 
 
 See also `tests` folder for the deeper reference.

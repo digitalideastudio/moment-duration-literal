@@ -28,12 +28,12 @@ moment.duration.fn.literal = function literal(options) {
   var segments = [];
   var years = this.years();
 
-  var months = options.summarize.months ? +this.asMonths().toFixed(0) : this.months();
-  var weeks = options.summarize.weeks  ? +this.asWeeks().toFixed(0) : this.weeks();
-  var days = options.summarize.days ? +this.asDays().toFixed(0) : this.days();
-  var hours = options.summarize.hours ? +this.asHours().toFixed(0) : this.hours();
-  var minutes = options.summarize.minutes ? +this.asMinutes().toFixed(0) : this.minutes();
-  var seconds = options.summarize.seconds ? +this.asSeconds().toFixed(0) : this.seconds();
+  var months = options.summarize.months ? +Math.floor(this.asMonths()).toFixed(0) : this.months();
+  var weeks = options.summarize.weeks ? +Math.floor(this.asWeeks()).toFixed(0) : this.weeks();
+  var days = options.summarize.days ? +Math.floor(this.asDays()).toFixed(0) : this.days();
+  var hours = options.summarize.hours ? +Math.floor(this.asHours()).toFixed(0) : this.hours();
+  var minutes = options.summarize.minutes ? +Math.floor(this.asMinutes()).toFixed(0) : this.minutes();
+  var seconds = options.summarize.seconds ? +Math.floor(this.asSeconds()).toFixed(0) : this.seconds();
 
   options.years && years && segments.push(`${years}y`);
   options.months && months && segments.push(`${months}mo`);

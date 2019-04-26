@@ -75,5 +75,12 @@ describe('Moment Duration Literal', function () {
     })).to.eql('39s 46m 9h 38mo');
     done();
   });
+
+  it('should format properly', function (done) {
+    expect(moment.duration(505010, 's').literal({
+      seconds: false,
+    })).to.eql('5d 20h 16m');
+    done();
+  });
 });
 

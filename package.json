@@ -1,6 +1,6 @@
 {
   "name": "moment-duration-literal",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Moment Duration nice human-readable formatter",
   "main": "index.js",
   "types": "./index.d.ts",
@@ -22,7 +22,7 @@
   "peerDependencies": {
     "moment": "2.x.x"
   },
-  "engine": "node >= 0.10.26",
+  "engine": "node >= 8.0.0",
   "author": "Serhii Matrunchyk <serhii@digitalidea.studio>",
   "license": "MIT",
   "bugs": {

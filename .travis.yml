@@ -9,7 +9,6 @@ script:
   - npm test
 
 node_js:
-  - "6"
   - "8"
   - "10"
 

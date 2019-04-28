@@ -48,6 +48,24 @@ moment.duration.fn.literal = function literal(options) {
   return segments.join(options.separator);
 };
 
+moment.duration.fn.format = function format(options) {
+  var defaults = {
+    separator: ':',
+  };
+  var options = Object.assign({}, defaults, options);
+  var segments = [];
+
+  var hours = Math.floor(this.asHours()).toFixed(0).padStart(1, '0');
+  var minutes = Math.floor(this.minutes()).toFixed(0).padStart(2, '0');
+  var seconds = Math.floor(this.seconds()).toFixed(0).padStart(2, '0')
+
+  segments.push(hours);
+  segments.push(minutes);
+  segments.push(seconds);
+
+  return segments.join(options.separator);
+};
+
 if (typeof module != 'undefined' && module.exports) {
   module.exports = moment;
 }

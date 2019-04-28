@@ -1,6 +1,6 @@
 {
   "name": "moment-duration-literal",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Moment Duration nice human-readable formatter",
   "main": "index.js",
   "types": "./index.d.ts",

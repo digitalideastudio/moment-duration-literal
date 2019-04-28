@@ -84,3 +84,51 @@ describe('Moment Duration Literal', function () {
   });
 });
 
+// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+
+describe('Moment Duration Format', function () {
+  it('should format 8400s', function (done) {
+    expect(moment.duration(8400, 's').format()).to.eql('2:20:00');
+    done();
+  });
+
+  it('should format 99999999s', function (done) {
+    expect(moment.duration(99999999, 's').format()).to.eql('27777:46:39');
+    done();
+  });
+
+  it('should format null', function (done) {
+    expect(moment.duration(null, 's').format()).to.eql('0:00:00');
+    done();
+  });
+
+  it('should format empty string', function (done) {
+    expect(moment.duration('', 's').format()).to.eql('0:00:00');
+    done();
+  });
+
+  it('should format 1s', function (done) {
+    expect(moment.duration(1, 's').format()).to.eql('0:00:01');
+    done();
+  });
+
+  it('should format 90000', function (done) {
+    expect(moment.duration(90000, 's').format()).to.eql('25:00:00');
+    done();
+  });
+
+  it('should format with with custom separator', function (done) {
+    expect(moment.duration(99999999, 's').format({
+      separator: '-',
+    })).to.eql('27777-46-39');
+    done();
+  });
+
+  it('should format properly', function (done) {
+    expect(moment.duration(505010, 's').format()).to.eql('140:16:50');
+    done();
+  });
+});
+
